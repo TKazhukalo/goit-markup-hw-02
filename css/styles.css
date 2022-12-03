@@ -2,27 +2,32 @@
     --accent-color: #4D5AE5;
     --primary-whirte-color:#FFFFFF;
     --color-priority: #2E2F42;
+    --color-text: #434455;
+    --color-active: #404BBF;
+    --color-bg-btn: #F4F4FD;
+    --color-footer: #E7E9FC;
 }
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: #434455;
-    background-color:  #FFFFFF;
-    letter-spacing: 0.02em;
+    color: var(--color-text);
+    background-color: var(--primary-whirte-color);
+    letter-spacing: 0.02em;    
 }
 .logo {
     font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.33;
     text-transform: uppercase;
-    color:var(--color-priority);
-    letter-spacing: 0.03em;
-    flex: none;
-order: 1;
-    flex-grow: 0;
+    text-decoration: none;
+    color: var(--color-priority)
+
+}
+.logo-color{
+    color: var(--accent-color);
 }
 .logo:hover,   
 .logo:focus {
@@ -35,6 +40,7 @@ order: 1;
     font-size: 16px;
     line-height: 1.5;
     list-style-type: none;
+    text-decoration: none;
 }
 .header-nav .link:hover,
 .header-nav .link:focus {
@@ -46,96 +52,99 @@ order: 1;
 .contacts-iteam  .contacts-link {
     font-size: 16px;
     line-height: 1.5;
-    color: #434455;   
+    color: var(--color-text) ;
+    text-decoration: none;
+    letter-spacing: 0.02em;
 }
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--accent-color);
 }
 .contacts-link:active {
-    color: #404BBF;
+    color: var(--color-active);
 }
 .button-iteam .button {
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #F4F4FD;
+    background-color: var(--color-bg-btn);
     color: var(--accent-color);
     cursor: pointer;
-    display: flex;
     text-align: center;
     letter-spacing: 0.04em;
 }
 .button-iteam .button:hover,
 .button-iteam .button:focus {
     color: var(--primary-whirte-color);
-    background: #4D5AE5;
+    background: var(--accent-color);
 }
 .button-iteam .button:active {
     color: var(--primary-whirte-color);
-    background: #404BBF;
+    background: var(--color-active);
  }
+ .button.btn-all{
+    color: var(--primary-whirte-color) ;
+    background-color: var(--accent-color);
+ }
+.list-item{
+    background-color: var(--primary-whirte-color);
+}
  .center {
-    background: #2E2F42;
+    background: var(--color-priority);
     /* Header 1 */
     font-weight: 600;
     font-size: 56px;
     line-height: 1.07;
-     text-align: center;
     letter-spacing: 0.02em;
     color: var(--primary-whirte-color);
-    width: 1440px;
 }
 .button-center{
-    background-color: #4D5AE5;
+    background-color: var(--accent-color);
     color: var(--primary-whirte-color);
 }
 .button-center:hover,
 .button-center:focus,
 .button-center:active {
     color: var(--primary-whirte-color);
-    background: #404BBF;
+    background: var(--color-active);
     cursor: pointer;
 }
 .team {
-    background: #F4F4FD;
-    width: 1440px; 
+    background: var(--color-bg-btn);
+}
+.item-team .team-list {
+    background-color: var(--primary-whirte-color);
 }
 .priorities {
-    font-family: 'Roboto',sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--color-priority);
  }
-.cloud{
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #F4F4FD;
-}
 .footer {
-    width: 1440px;
-    height: 310px;
-    left: 0px;
-    top: 2283px;
-    background: #2E2F42;
-    color: #F4F4FD;
+    background: var(--color-priority);
+    color: var(--color-bg-btn);
+
 }
 .footer-text{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #E7E9FC; 
+    color: var(--color-footer);
 }
 .footer-link {
-    color: #F4F4FD;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--color-bg-btn);
 }
-.footer-link:hover,
-.footer-link:focus {
-   color: var(--accent-color);
+.footer-link:hover {
+    color: var(--accent-color);
 }
