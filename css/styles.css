@@ -93,15 +93,14 @@ body {
  .center {
     background: var(--color-priority);
     /* Header 1 */
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    color: var(--primary-whirte-color);
+   
 }
 .button-center{
     background-color: var(--accent-color);
-    color: var(--primary-whirte-color);
+    font-family: inherit;
+font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.02em;
 }
 .button-center:hover,
 .button-center:focus,
@@ -109,6 +108,14 @@ body {
     color: var(--primary-whirte-color);
     background: var(--color-active);
     cursor: pointer;
+}
+.hero {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--primary-whirte-color);
 }
 .team {
     background: var(--color-bg-btn);
